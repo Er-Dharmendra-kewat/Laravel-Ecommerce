@@ -42,14 +42,9 @@
             @yield('content')
         </main>
     </div>
-
-
+    
     <script src="{{ asset('assets/css/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/css/js/jquery-3.7.1.min') }}"></script>
-
-
-
-
     @livewireScripts
 </body>
 

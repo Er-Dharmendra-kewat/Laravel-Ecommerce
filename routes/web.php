@@ -20,8 +20,21 @@ Route::get('/', [FrontendController::class, 'index']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
+
+// CropsDetection routes
+
+Route::get('/image-upload', [DiseaseDetectionController::class, 'UploadImage']);
+Route::post('/image-upload', [DiseaseDetectionController::class, 'storeImage']);
+Route::get('/crop-result', [DiseaseDetectionController::class, 'result']);
+// Route::post('/detect-crop', [DiseaseDetectionController::class, 'detectCropDisease']);
+
+
+
 Route::get('/collections', [FrontendController::class, 'categories']);
 Route::get('/collections/{category_slug}', [FrontendController::class, 'products']);
+
+
+Route::get('/collections/{category_slug}/{product_slug}', [FrontendController::class, 'productsView']);
 
 
 Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
@@ -38,9 +51,6 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
     });
 
 
-    // CropsDetection routes
-
-    Route::post('/detect-crop', [DiseaseDetectionController::class, 'detectCropDisease']);
 
 
     // Category Routes

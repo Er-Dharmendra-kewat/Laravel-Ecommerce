@@ -74,13 +74,13 @@
 
                                 </div>
                                 <div class="mb-3">
-                                    <label>{Product Name</label>
+                                    <label>Product Name</label>
                                     <input type="text" name="name" class="form-control">
 
                                 </div>
 
                                 <div class="mb-3">
-                                    <label>{Product Slug</label>
+                                    <label>Product Slug</label>
                                     <input type="text" name="slug" class="form-control">
 
                                 </div>
@@ -95,44 +95,35 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label>{Small Description (500 Words)</label>
+                                    <label>Small Description (500 Words)</label>
                                     <textarea name="small_description" class="form-control" rows="4"></textarea>
 
                                 </div>
-
+ 
                                 <div class="mb-3">
-                                    <label>{Description</label>
+                                    <label>Description</label>
                                     <textarea name="description" class="form-control" rows="4"></textarea>
 
                                 </div>
-
                             </div>
-
                             <div class="tab-pane fade border p-3" id="seotag-tab-pane" role="tabpanel"
                                 aria-labelledby="seotag-tab" tabindex="0">
 
                                 <div class="mb-3">
-                                    <label>{Meta Title</label>
+                                    <label>Meta Title</label>
                                     <input type="text" name="meta_title" class="form-control">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label>{Meta Description</label>
+                                    <label>Meta Description</label>
                                     <input type="text" name="meta_description" class="form-control"
                                         rows="4"></textarea>
-
                                 </div>
-
-
                                 <div class="mb-3">
-                                    <label>{Meta Keyword</label>
+                                    <label>Meta Keyword</label>
                                     <input type="text" name="meta_keyword" class="form-control"
                                         rows="4"></textarea>
-
                                 </div>
-
-
-
                             </div>
 
                             <div class="tab-pane fade border p-3" id="details-tab-pane" role="tabpanel"
@@ -140,31 +131,31 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="mb-3">
-                                            <label>{Original Price</label>
+                                            <label>Original Price</label>
                                             <input type="text" name="original_price" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="mb-3">
-                                            <label>{Selling Price</label>
+                                            <label>Selling Price</label>
                                             <input type="text" name="selling_price" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="mb-3">
-                                            <label>{quantity</label>
+                                            <label>quantity</label>
                                             <input type="text" name="quantity" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="mb-3">
-                                            <label>{Trending</label>
+                                            <label>Trending</label>
                                             <input type="checkbox" name="trending" style="width: 50px;height:50px;">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="mb-3">
-                                            <label>{Stauts</label>
+                                            <label>Stauts</label>
                                             <input type="checkbox" name="status" style="width: 50px;height:50px;">
                                         </div>
                                     </div>
@@ -197,7 +188,8 @@
                                                     {{ $coloritem->name }}
 
                                                     <br>
-                                                    Quantity: <input type="number" name="colorquantity[{{ $coloritem->id }}]"
+                                                    Quantity: <input type="number"
+                                                        name="colorquantity[{{ $coloritem->id }}]"
                                                         style="width:70px;border:1px solid">
                                                 </div>
 

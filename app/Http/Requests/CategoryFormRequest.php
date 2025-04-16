@@ -25,7 +25,7 @@ class CategoryFormRequest extends FormRequest
             'name' => [
                 'required',
                 'string',
-                
+
 
             ],
             'slug' => [
@@ -37,7 +37,7 @@ class CategoryFormRequest extends FormRequest
             'description' => [
                 'required',
             ],
-            
+
             'image' => [
                 'nullable',
                 'mimes:jpg,jpeg,png',
@@ -50,7 +50,7 @@ class CategoryFormRequest extends FormRequest
 
             ],
             'status' => [
-                'required',
+                'nullable',
 
             ],
             'meta_keyword' => [
@@ -65,8 +65,8 @@ class CategoryFormRequest extends FormRequest
 
 
             ],
-            
-            
+
+
         ];
     }
 }

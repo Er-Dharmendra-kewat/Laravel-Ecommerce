@@ -94,21 +94,24 @@
                         <a class="nav-link" href="{{url('/')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/collections')}}">All Categories</a>
+                        <a class="nav-link" href="{{url('/collections')}}">Products</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{url('/collections')}}">Services</a>
+                    </li>
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{url('new-arrivals')}}">New Arrivals</a>
+                    </li> --}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url('/image-upload')}}">Upload Image</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Featured Products</a>
+                        <a class="nav-link" href="#">Suplements</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Electronics</a>
-                    </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="#">Fashions</a>
-                    </li>
-                    <li class="nav-item">
+                    </li> --}}
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="#">Accessories</a>
                     </li>
                     <li class="nav-item">
@@ -116,7 +119,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Appliances</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>

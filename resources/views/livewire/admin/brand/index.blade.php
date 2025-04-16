@@ -50,11 +50,11 @@
                                     <td>{{ $brand->slug }}</td>
                                     <td>{{ $brand->status == '1' ? 'hidden' : 'visible' }}</td>
                                     <td>
-                                        <a href="#" wire:click="editBrand({{ $brand->id }})"
-                                            data-bs-toggle="modal" data-bs-target="#updateBrandModal"
+                                        <a href="#" wire:click="editBrand({{ $brand->id }})"data-bs-toggle="modal" data-bs-target="#updateBrandModal"
                                             class="btn btn-sm btn-success">Edit</a>
-                                        <a href="#" wire:click="deleteBrand({{ $brand->id }}"
-                                            data-bs-toggle="modal" data-bs-target="#deleteBrandModal"
+
+
+                                        <a href="#" wire:click="deleteBrand({{ $brand->id }}"data-bs-toggle="modal" data-bs-target="#deleteBrandModal"
                                             class="btn btn-sm btn-danger">Delete</a>
                                     </td>
                                 </tr>

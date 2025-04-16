@@ -35,7 +35,6 @@ class ProductController extends Controller
         return view('admin.products.create', compact('categories', 'brands', 'colors'));
     }
 
-
     public function store(ProductFormRequest $request)
     {
 
@@ -58,7 +57,7 @@ class ProductController extends Controller
             'meta_title' => $validatedData['meta_title'],
             'meta_keyword' => $validatedData['meta_keyword'],
             'meta_description' => $validatedData['meta_description'],
-            'image' => $validatedData['image'],
+            'image' => $validatedData['image']
         ]);
         if ($request->hasFile('image')) {
             $uploadPath = 'uploads/products/';

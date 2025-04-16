@@ -23,7 +23,6 @@ return new class extends Migration
     {
         Schema::table('brands', function (Blueprint $table) {
             $table->dropColumn('category_id');
-
         });
     }
 };

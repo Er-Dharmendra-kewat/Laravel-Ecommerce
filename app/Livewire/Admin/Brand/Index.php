@@ -14,7 +14,7 @@ class Index extends Component
     use WithPagination;
     protected $paginationTheme = 'bootstrap';
 
-    public  $name, $slug, $status,$brand_id,$category_id;
+    public  $name, $slug, $status, $brand_id ,$category_id;
 
     public function rules()
     {
@@ -89,6 +89,7 @@ class Index extends Component
 
 
     function deleteBrand($brand_id){
+        // dd($brand_id);
 
         $this->brand_id = $brand_id;
     }
@@ -107,8 +108,6 @@ class Index extends Component
     {
         $categories  = Category::where('status','0')->get();
         $brands  = Brand::orderBy('id', 'DESC')->paginate(10);
-        return view('livewire.admin.brand.index', ['brands' => $brands,'categories'=>$categories])
-            ->extends('layouts.admin')
-            ->section('content');
+        return view('livewire.admin.brand.index', ['brands' => $brands,'categories'=>$categories])->extends('layouts.admin')->section('content');
     }
 }
